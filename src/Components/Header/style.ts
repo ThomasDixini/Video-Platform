@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Header = styled`
-
+export const HeaderContainer = styled.header`
+color: red;
 `

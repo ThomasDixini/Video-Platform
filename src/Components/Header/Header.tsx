@@ -1,3 +1,12 @@
+import { HeaderContainer } from './style'
+import Icon from '../Icon'
+
 export function Header(){
-    return <h1> Header </h1>
+    return (
+        <HeaderContainer>
+            <Icon />
+        </HeaderContainer>
+    );
+        
+    
 }
