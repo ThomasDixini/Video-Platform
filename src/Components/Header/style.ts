@@ -5,7 +5,7 @@ width: 100%;
 display: flex;
 justify-content: center;
 background-color: #131214;
-border-bottom: 0.5rem solid #3f3f3f;
+border-bottom: 0.2rem solid #3f3f3f;
 
 svg {
     max-width: 400px;
