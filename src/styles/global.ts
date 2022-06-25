@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     background-color: var(--gray-700);
+    color: #FFF;
 }
 
 body, input, textarea, button {
