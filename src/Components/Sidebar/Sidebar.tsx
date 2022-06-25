@@ -1,7 +1,9 @@
+import { Aside } from "./style";
+
 export function Sidebar(){
     return(
-        <aside>
-            
-        </aside>
+        <Aside>
+
+        </Aside>
     );
 }

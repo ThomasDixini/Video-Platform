@@ -1,7 +1,9 @@
+import { Container } from "./style";
+
 export function Video(){
     return(
-        <p>
+        <Container>
             Video
-        </p>
+        </Container>
     );
 }
