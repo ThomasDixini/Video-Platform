@@ -10,7 +10,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 :root {
+    --gray-500: #131214;
+    --gray-700: #0D0B0D;
+}
 
+body {
+    background-color: var(--gray-700);
 }
 
 body, input, textarea, button {
