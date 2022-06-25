@@ -29,6 +29,11 @@ h1,h2,h3,h4,h5,h6,strong {
     font-weight: 600;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 html {
     @media( max-width: 1000px){
     font-size: 93.75%;
