@@ -1,16 +1,34 @@
-import { Ancora } from "./style";
-import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { Ancora, LessonType } from "./style";
+import { AiFillLock, AiOutlineCheckCircle } from 'react-icons/ai';
+import { format, isPast } from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
+interface LessonProps {
+    title: string;
+    slug: string;
+    availableAt: Date;
+    type: 'live' | 'class';
+}
 
-export function Lesson(){
+export function Lesson(props: LessonProps){
+
+    const isLessonAvailable = isPast(props.availableAt);
+    const formatedDate = format(props.availableAt, "EEEE' • 'd' de 'MMMM' • 'k'h'mm'", {
+        locale: ptBR
+    })
+
     return(
         <Ancora href="#">
-            <span className="date-span"> Domingo • 20 de junho • 19h00 </span>
+            <span className="date-span"> {formatedDate} </span>
             <div>
                 <header>
-                    <span> <AiOutlineCheckCircle/> Conteúdo Liberado </span>
-                    <span> AO VIVO </span>
+                    {isLessonAvailable ? (
+                        <LessonType available={isLessonAvailable}> <AiOutlineCheckCircle/> Conteúdo Liberado </LessonType >
+                    ) : (
+                        <LessonType available={isLessonAvailable}> <AiFillLock/> Em breve </LessonType >
+                    )}
+                    <span> {props.type == "live" ? 'AO VIVO' : 'AULA PRÁTICA'} </span>
                 </header>
-                <strong> Abertura do Evento Ignite Lab </strong>
+                <strong> {props.title} </strong>
             </div>
         </Ancora>
     );

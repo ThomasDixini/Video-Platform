@@ -46,3 +46,11 @@ div {
     }
 }
 ` 
+interface LessonTypeProps {
+    available: boolean;
+}
+
+export const LessonType = styled.span<LessonTypeProps>`
+
+color: ${props => props.available == true ? 'var(--blue)' : 'orange'} !important;
+`
