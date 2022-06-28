@@ -45,6 +45,26 @@ div.content-lesson {
             line-height: 1.65rem;
             color: var(--gray-300);
         }
+        div.perfil {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                border-radius: 5rem;
+                border: 2px solid var(--blue);
+            }
+            div.bio-teacher {
+                strong {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
 
     div.link-buttons {

@@ -18,6 +18,14 @@ export function Video(){
                     <p>
                         Nessa aula vamos dar início ao projeto criando a estrutura base da aplicação utilizando ReactJS, Vite e TailwindCSS. Vamos também realizar o setup do nosso projeto no GraphCMS criando as entidades da aplicação e integrando a API GraphQL gerada pela plataforma no nosso front-end utilizando Apollo Client.               
                     </p>
+
+                    <div className="perfil">
+                        <img src="https://github.com/ThomasDixini.png" alt="Professor da Aula" width="70"/>
+                        <div className="bio-teacher">
+                            <strong> Thomás Dixini </strong>
+                            <p> Estudante at @Unis </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="link-buttons">
                     <a href="#">
