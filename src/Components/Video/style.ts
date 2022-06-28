@@ -8,18 +8,16 @@ flex-direction: column;
 
 
 div.bg-player {
-    background-color: black;
+    background-color: #090909;
     width: 100%;
     height: 100%;
-    max-height: 60vh;
-    aspect-ratio: 16/9;
+    max-height: 80vh;
     display: flex;
     justify-content: center;
 
     div.player {
         width: 100%;
         max-width: 1100px;
-        max-height: 60vh;
         aspect-ratio: 16/9;
         background-color: gray;
     }

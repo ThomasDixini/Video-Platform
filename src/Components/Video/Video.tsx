@@ -4,12 +4,18 @@ import { TbBrandDiscord } from 'react-icons/tb'
 import { BsLightningCharge } from 'react-icons/bs'
 import { Materials } from "../Materials/Materials";
 
+import { DefaultUi, Player, Youtube } from '@vime/react';
+import '@vime/core/themes/default.css';
+
 export function Video(){
     return(
         <Container>
             <div className="bg-player">
                 <div className="player">
-                    Video
+                    <Player>
+                        <Youtube videoId="Ox_zb2cs9zM"/>
+                        <DefaultUi />
+                    </Player>
                 </div>
             </div>
 
@@ -39,7 +45,7 @@ export function Video(){
 
                 
             </div>
-            
+
             <Materials />
         </Container>
     );
