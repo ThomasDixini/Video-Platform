@@ -2,6 +2,7 @@ import { Container } from "./style";
 
 import { TbBrandDiscord } from 'react-icons/tb'
 import { BsLightningCharge } from 'react-icons/bs'
+import { Materials } from "../Materials/Materials";
 
 export function Video(){
     return(
@@ -35,8 +36,11 @@ export function Video(){
                        <BsLightningCharge size={24} /> Acesse o desafio
                     </a>
                 </div>
+
+                
             </div>
             
+            <Materials />
         </Container>
     );
 }
